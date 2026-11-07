@@ -1,0 +1,40 @@
+# ==========================================================
+# 1. PROTEKSI DATA BISNIS ASLI & DATABASE PRODUKSI (KRITIS)
+# ==========================================================
+data/production/
+data/backups/
+data/taiyaki_business.db
+data/taiyaki_business.db-wal
+data/taiyaki_business.db-shm
+*production*.db
+*business*.db
+*backup*.db
+projectapp.xlsx
+
+# Catatan: Database sintetis demo tetap boleh diabaikan karena
+# aplikasi akan membuatnya otomatis saat pertama kali dibuka:
+data/demo/*.db
+data/demo/*.db-wal
+data/demo/*.db-shm
+data/demo_synthetic.db
+
+# ==========================================================
+# 2. KREDENSIAL, SECRET KEY & ENVIRONMENT VARIABLES
+# ==========================================================
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ==========================================================
+# 3. VIRTUAL ENVIRONMENT & CACHE PYTHON
+# ==========================================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.DS_Store
+Thumbs.db
